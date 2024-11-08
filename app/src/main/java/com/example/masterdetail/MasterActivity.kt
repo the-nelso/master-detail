@@ -22,7 +22,7 @@ class MasterActivity : AppCompatActivity() {
             insets
         }
 
-        recyclerViewTimes = findViewById<RecyclerView>(R.id.timesRV);
+        recyclerViewTimes = findViewById<RecyclerView>(R.id.TimesRV);
 
         // ADAPTER AQUI
 
