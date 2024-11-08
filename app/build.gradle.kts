@@ -3,9 +3,15 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.6.0")
+    }
+}
+
 android {
     namespace = "com.example.masterdetail"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.masterdetail"
