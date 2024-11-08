@@ -35,12 +35,12 @@ class MasterActivity : AppCompatActivity() {
 
     private fun criarTimes() : List<Time>{
         return listOf(
-            Time("Coritiba", "Paraná", "Segunda Divisão"),
-            Time("Atlético Paranaense", "Paraná", "Primeira Divisão"),
-            Time("Guarani", "São Paulo", "Segunda Divisão"),
-            Time("Paraná Clube", "Paraná", "Quarta Divisão"),
-            Time("Londrina", "Paraná", "Terceira Divisão"),
-            Time("Flamengo", "Rio de Janeiro", "Primeira Divisão"),
+            Time("Coritiba", "Paraná", "Segunda Divisão", R.drawable.coritiba),
+            Time("Atlético Paranaense", "Paraná", "Primeira Divisão", R.drawable.atleticopr),
+            Time("Guarani", "São Paulo", "Segunda Divisão", R.drawable.guarani),
+            Time("Paraná Clube", "Paraná", "Quarta Divisão", R.drawable.parana),
+            Time("Londrina", "Paraná", "Terceira Divisão", R.drawable.londrina),
+            Time("Flamengo", "Rio de Janeiro", "Primeira Divisão", R.drawable.flamengo),
         )
     }
 }
