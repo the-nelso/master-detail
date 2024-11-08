@@ -8,7 +8,7 @@
     tools:context=".MasterActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/heroesRV"
+        android:id="@+id/timesRV"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:layout_marginStart="16dp"
