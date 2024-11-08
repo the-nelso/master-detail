@@ -8,7 +8,7 @@
     tools:context=".MasterActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/timesRV"
+        android:id="@+id/TimesRV"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:layout_marginStart="16dp"
@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        tools:itemCount="6" />
+        tools:itemCount="6"
+        tools:listitem="@layout/list_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
