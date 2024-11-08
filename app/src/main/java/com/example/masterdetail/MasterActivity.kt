@@ -1,5 +1,6 @@
 package com.example.masterdetail
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,8 +24,11 @@ class MasterActivity : AppCompatActivity() {
         }
 
         recyclerViewTimes = findViewById<RecyclerView>(R.id.TimesRV);
-
-        // ADAPTER AQUI
+        recyclerViewTimes.adapter = TimesAdapter(criarTimes(), this){
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("time", it)
+            startActivity(intent)
+        }
 
         recyclerViewTimes.layoutManager = LinearLayoutManager(this);
         recyclerViewTimes.setHasFixedSize(true);

@@ -30,15 +30,14 @@ class DetailActivity : AppCompatActivity() {
         estadoTextView = findViewById(R.id.estadoTextView);
         divisaoTextView = findViewById(R.id.divisaoTextView);
 
-        time = intent.getSerializableExtra("time") as Time;
+        val time = intent.getParcelableExtra<Time>("time");
 
         if(time != null){
-            imageView.setImageResource(time!!.imagem);
-            nomeTextView.text = time!!.nome;
-            estadoTextView.text = time!!.estado;
-            divisaoTextView.text = time!!.divisao;
+            imageView.setImageResource(time.imagem);
+            nomeTextView.text = time.nome;
+            estadoTextView.text = time.estado;
+            divisaoTextView.text = time.divisao;
         }
     }
-
 
 }
